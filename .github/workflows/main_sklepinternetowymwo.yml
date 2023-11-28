@@ -22,13 +22,14 @@ jobs:
           java-version: '17'
 
       - name: Build with Maven
+        working-directory: /home/runner/work/sklep-internetowy/sklep-internetowy/SklepInternetowyApp/
         run: mvn clean install
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          name: SklepInternetowyApp
+          path: '${{ github.workspace }}/SklepInternetowyApp/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
