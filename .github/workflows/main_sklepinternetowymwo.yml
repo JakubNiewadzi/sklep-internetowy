@@ -49,7 +49,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'SklepInternetowyMwo-dev'
-          slot-name: 'Production'
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D376CFFB710E40C5BD498DCA6A3B4CC0 }}
 
@@ -71,6 +70,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'SklepInternetowyMWO'
-          slot-name: 'Production'
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_687F65F0DF444CBC81289C3B526803C1 }}
