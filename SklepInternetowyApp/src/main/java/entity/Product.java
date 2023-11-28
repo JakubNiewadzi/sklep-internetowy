@@ -24,5 +24,6 @@ public class Product {
     private String description;
     private int amountInStock;
     private int maximumInStock;
+    private Int aaa;
 
 }
